@@ -21,7 +21,4 @@ def index():
     return render_template("index.html", total=total)
 
 if __name__ == "__main__":
-    import os
-    print("Templates folder:", os.path.join(app.root_path, "templates"))
-
-    app.run(debug=True)
+    app.run(debug=True, port=5050)
